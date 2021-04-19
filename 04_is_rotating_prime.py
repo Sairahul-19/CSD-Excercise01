@@ -23,9 +23,18 @@ Although 19 is prime, 91 is not.
 
 
 # Implement the below function and run the program
-
+from itertools import permutations
 def is_rotating_prime(num):
-    pass
+    l=[]
+    a=list(permutations(str(num),len(str(num))))
+    for i in a :
+        l.append("".join(i))
+    for k in l:
+        for j in range(2,int(k)):
+            if (int(k)%j)==0:
+                return False
+    return True
+
 
 
 class TestIsRotatingPrime(unittest.TestCase):

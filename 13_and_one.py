@@ -30,7 +30,14 @@ import unittest
 
 
 def and_one(nums):
-    pass
+    l=[]
+    s = [str(i) for i in nums]
+    res = int("".join(s))
+    c=res+1
+    for u in str(c):
+        l.append(int(u))
+    return l
+
 
 
 # DO NOT TOUCH THE BELOW CODE

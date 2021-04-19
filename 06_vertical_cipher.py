@@ -29,7 +29,20 @@ import unittest
 
 
 def vertical_cipher(s, n):
-    pass
+    t=list()
+    y=(len(s)+1)//n
+    for i in range(n):
+        oo=i
+        first=str()
+        first=s[i]
+        for j in s:
+            oo=oo+n
+            if oo<len(s):
+                first=first+s[oo]
+            else:
+                break
+        t.append(first)
+    return t
 
 
 # DO NOT TOUCH THE BELOW CODE

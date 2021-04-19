@@ -43,7 +43,7 @@ import unittest
 
 
 def largest(arr):
-    pass
+    return(max(arr))
 
 
 # DO NOT TOUCH THE BELOW CODE

@@ -31,8 +31,18 @@ import unittest
 
 
 def big_numbers(matrix):
-    pass
-
+    row=[]
+    for i in range(len(matrix)):
+        row.append(matrix[i])
+    column=[]
+    column=[[row[i] for row in matrix] for i in range(len(matrix[0]))]
+    result=0
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            x=matrix[i][j]
+            if x==max(row[i]) and x==max(column[j]):
+                result = result + 1
+    return result
 
 # DO NOT TOUCH THE BELOW CODE
 class TestBigNumbers(unittest.TestCase):

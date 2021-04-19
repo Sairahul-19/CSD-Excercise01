@@ -34,7 +34,20 @@ import unittest
 
 
 def css_trick(r=0, g=0, b=0):
-    pass
+    if r==0:
+        x='00'
+    else:
+        x=str(hex(r)[2:])
+    if g==0:
+        y='00'
+    else:
+        y=str(hex(g)[2:])
+    if b==0:
+        z='00'
+    else:
+        z=str(hex(b)[2:])
+    return ('#'+(x+y+z).upper())
+
 
 
 # DO NOT TOUCH THE BELOW CODE

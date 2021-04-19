@@ -33,7 +33,13 @@ import unittest
 
 
 def flip_123(n):
-    pass
+    l=list(str(n))
+    for x in range(len(l)):
+        if l[x] != '3':
+            l[x] = '3'
+            return int(''.join(l))
+    return n
+
 
 
 # DO NOT TOUCH THE BELOW CODE

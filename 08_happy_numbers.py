@@ -49,7 +49,19 @@ import unittest
 
 
 def happy_numbers(n):
-    pass
+    l=list()
+    y=n
+    for i in range(n):
+        l.append(y)
+        s=0
+        for i in str(y):
+            s=s+int(i)**2
+        y=s
+        if s==1:
+            return True
+        elif s in l:
+            return False    
+        
 
 
 # DO NOT TOUCH THE BELOW CODE

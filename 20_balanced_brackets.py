@@ -50,7 +50,20 @@ import unittest
 
 
 def balanced_brackets(sentence):
-    pass
+    c1=0
+    c2=0
+    if sentence.startswith(')'):
+        return False
+    for i in range(len(sentence)):
+        if (sentence[i]=='('):
+            c1=c1+1
+        else:
+            c2=c2+1
+    if c1==c2:
+        return True
+    else:
+        return False
+
 
 
 # DO NOT TOUCH THE BELOW CODE

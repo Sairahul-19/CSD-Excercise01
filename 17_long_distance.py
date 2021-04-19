@@ -42,7 +42,15 @@ import unittest
 
 
 def long_distance(lst):
-    pass
+    l=[]
+    for i in range(0,len(lst)):
+        c=0
+        for j in range(i+1,len(lst)):
+            if lst[i]>lst[j]:
+                c=c+1
+        l.append(c)
+    return l
+
 
 
 # DO NOT TOUCH THE BELOW CODE

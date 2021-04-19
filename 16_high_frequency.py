@@ -35,7 +35,16 @@ import unittest
 
 
 def high_frequency(nums):
-    pass
+    l=[]
+    for i in range(0,len(nums)):
+        c=1
+        for j in range(i+1,len(nums)):
+            if nums[i]==nums[j]:
+                c=c+1
+        l.append(c)
+        l.sort(reverse=True)
+    return l[0]
+
 
 
 # DO NOT TOUCH THE BELOW CODE

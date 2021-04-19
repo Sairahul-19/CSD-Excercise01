@@ -25,7 +25,13 @@ import unittest
 
 
 def connell_sequence(n):
-    pass
+    i = 1
+    while (i * (i + 1) // 2) < n + 1:
+        i += 1
+    idex = i * (i + 1) // 2
+    num = i**2
+    return num - 2 * (idex - n - 1)
+
 
 
 # DO NOT TOUCH THE BELOW CODE

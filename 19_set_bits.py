@@ -44,7 +44,17 @@ import unittest
 
 
 def set_bits(n):
-    pass
+    count=0
+    for i in range(0,n+1):
+        x=bin(i)
+        c=str(x)
+        for b in c:
+            if b=='1':
+                count=count+1
+    return count
+
+  
+  
 
 
 # DO NOT TOUCH THE BELOW CODE
