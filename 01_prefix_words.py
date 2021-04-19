@@ -28,7 +28,7 @@ Explanation:
 All these words start with b, except for “carrot”.
 """
 
-# Implement the below function and run the program
+# Implement the below function and run the progam
 
 
 def prefix_words(prefix, words):
