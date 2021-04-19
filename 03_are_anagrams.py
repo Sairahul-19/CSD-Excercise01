@@ -28,7 +28,7 @@ False
 """
 
 
-# Implement the below function and run the program
+# Implement the below function and run the progr
 
 def are_anagrams(word1, word2):
     for i in word1:

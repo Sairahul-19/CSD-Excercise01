@@ -27,7 +27,7 @@ Explanation:
 All these words ends with d, except for “mat” and “cat”.
 """
 
-# Implement the below function and run the program
+# Implement the below function and run the progrram
 
 
 def suffix_words(suffix, words):
